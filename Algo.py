@@ -15,6 +15,7 @@ def is_trading_time():
   market_open = time(9, 30) #0930
   market_close = time(15,45) #1545
 
+# Stops the trading if the time is found to be "1545" or later
 if now >= market_close:
   print("STOPPED")
   sys.exit()
