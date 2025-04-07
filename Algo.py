@@ -15,7 +15,11 @@ def is_trading_time():
   market_open = time(9, 30) #0930
   market_close = time(15,45) #1545
 
-# Checks if the time is in the Trading hours or outside of trading hours, the function will return TRUE or FALSE
+if now >= market_close:
+  print("STOPPED")
+  sys.exit()
+
+  # Checks if the time is in the Trading hours or outside of trading hours, the function will return TRUE or FALSE
   return market_open <= now <= market_close
 
 # Ensures that the code is only run when we execute the file directly not when its imported into another file
