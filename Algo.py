@@ -27,5 +27,7 @@ if __name__ == "__main__":
     # If the time isn't in the selected hours than the script will print "Market is CLOSED - STOPPED" 
   else:
     print("Market is CLOSED - STOPPED")
+    # Immideitely stops the script completely if the market is closed
+    sys.exit()
 
 
