@@ -1,4 +1,4 @@
-# Define the trading time
+# "dattime" lets us get the current date and time, "time" lets us define values such as "0930" and "1545"
 from datettime import datetime, time
 # Download pytz by typing "pip install pytz" in command line
 import pytz
@@ -11,7 +11,7 @@ def is_trading_time():
 # Get current time in Eastern Time
   now = datetime.now(eastern).time()
 
-# Define regular trading hours
+# In lines 15, and 16 we are defining the New York Stock Exchanges Open time (0930 EST) and what time we want the script to end (1545 EST)
   market_open = time(9, 30) #0930
   market_close = time(15,45) #1545
 
